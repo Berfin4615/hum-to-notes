@@ -1,19 +1,19 @@
-import { Image } from 'expo-image';
+import { LinearGradient } from 'expo-linear-gradient';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 
 
 export default function RecordScreen() {
 
   return (
-    <View style={styles.container}>
-      <Image
-        style={styles.image}
-        source={require("../../assets/images/back.jpg")}
-        contentFit="cover"
-        transition={1000}
-      />
-    </View>
+    <LinearGradient
+      colors={['#6a11cb', '#2575fc']} 
+      style={styles.container}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
+    >
+      
+    </LinearGradient>
     
   );
 }
